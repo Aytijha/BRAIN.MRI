@@ -1,6 +1,9 @@
 <!-- Video Source -->
 <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
 
+<title>Alzheimer's Prediction</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 <style>
     @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
@@ -202,13 +205,25 @@
             font-size: 2em;
         }
     }
+
+    .mb-3 {
+        padding: 1em;
+    }
+
+    #subbtn {
+        --bs-btn-border-radius: 0rem;
+    }
+
+    #formFile {
+        border-radius: 0rem;
+    }
 </style>
 <section class="showcase">
     <header>
         <h2 class="logo">Brain.MRI</h2>
         <div class="toggle"></div>
     </header>
-    <video src="pexels-tima-miroshnichenko-6010766.mp4" muted loop autoplay></video>
+    <video src="assets/pexels-tima-miroshnichenko-6010766.mp4" muted loop autoplay></video>
     <div class="overlay"></div>
     <div class="text">
         <h2>Alzheimer's Detection</h2>
@@ -217,23 +232,21 @@
             Tech Stack: Jupyter, HTML, Javascript, CSS <br>
             Models used: CNN
         </p>
+        <p>{{ type }}</p>
         <a href="#">Explore</a>
     </div>
     <ul class="social">
-        <li><a href="https://github.com/Aytijha/Brain-MRI-Alzheimers-Prediction"><img src="icons8-github-50.png"></a>
+        <li><a href="https://github.com/Aytijha/Brain-MRI-Alzheimers-Prediction"><img src="assets/icons8-github-50.png"></a>
         </li>
-        <li><a href="https://twitter.com/AytijhaC"><img src="twitter.png"></a></li>
-        <li><a href="https://www.instagram.com/aytijha.aa/"><img src="instagram.png"></a></li>
+        <li><a href="https://twitter.com/AytijhaC"><img src="assets/twitter.png"></a></li>
+        <li><a href="https://www.instagram.com/aytijha.aa/"><img src="assets/instagram.png"></a></li>
     </ul>
 </section>
 <div class="menu">
-    <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Upload</a></li>
-        <li><a href="#">Tune Model</a></li>
-        <li><a href="#">Predict</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
+    <div class="mb-3">
+        <input class="form-control" type="file" id="formFile"><br>
+        <center><button type="submit" class="btn btn-outline-primary" id="subbtn">Submit</button></center>
+    </div>
 </div>
 
 <script>
