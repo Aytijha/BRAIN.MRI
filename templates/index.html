@@ -1,7 +1,7 @@
 <!-- Video Source -->
 <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
 
-<title>Alzheimer's Prediction</title>
+<title>BRAIN.MRI</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 <style>
@@ -223,7 +223,7 @@
         <h2 class="logo">Brain.MRI</h2>
         <div class="toggle"></div>
     </header>
-    <video src="assets/pexels-tima-miroshnichenko-6010766.mp4" muted loop autoplay></video>
+    <video src="{{ bgvideo }}" muted loop autoplay></video>
     <div class="overlay"></div>
     <div class="text">
         <h2>Alzheimer's Detection</h2>
@@ -236,17 +236,19 @@
         <a href="#">Explore</a>
     </div>
     <ul class="social">
-        <li><a href="https://github.com/Aytijha/Brain-MRI-Alzheimers-Prediction"><img src="assets/icons8-github-50.png"></a>
+        <li><a href="https://github.com/Aytijha/Brain-MRI-Alzheimers-Prediction"><img src="{{ githubicon }}"></a>
         </li>
-        <li><a href="https://twitter.com/AytijhaC"><img src="assets/twitter.png"></a></li>
-        <li><a href="https://www.instagram.com/aytijha.aa/"><img src="assets/instagram.png"></a></li>
+        <li><a href="https://twitter.com/AytijhaC"><img src="{{ twittericon }}"></a></li>
+        <li><a href="https://www.instagram.com/aytijha.aa/"><img src="{{ instagramicon }}"></a></li>
     </ul>
 </section>
 <div class="menu">
-    <div class="mb-3">
-        <input class="form-control" type="file" id="formFile"><br>
-        <center><button type="submit" class="btn btn-outline-primary" id="subbtn">Submit</button></center>
-    </div>
+    <form action="" method="post">
+        <div class="mb-3">
+            <input class="form-control" type="file" name="file" id="formFile"><br>
+            <center><button type="submit" class="btn btn-outline-primary" id="subbtn">Submit</button></center>
+        </div>
+    </form>
 </div>
 
 <script>
