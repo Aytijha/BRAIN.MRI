@@ -19,7 +19,9 @@ def upload_form():
 
 @app.route('/', methods=['POST'])
 def upload_image():
-    print('post')
+    file = request.files['file']
+    print(file.filename)
+    file.save(os.path.join("static/uploads", secure_filename(file.filename)))
     c = 'xyz'
     return render_template('index.html', type="Patient is suffering from "+c+" type Alzheimers", githubicon=github_icon, instagramicon=instagram_icon, twittericon=twitter_icon, bgvideo=bg_video)
 
