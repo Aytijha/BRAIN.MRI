@@ -1,5 +1,3 @@
-os
-urllib
 flask
 werkzeug
 numpy
