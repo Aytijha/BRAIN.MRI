@@ -2,7 +2,8 @@
 
 Detect Alzheimer's Disease using Brain MRI scans, with the power of Deep Learning.
 
-![](screenshots/BRAIN_MRI_demo.gif)
+<img src="screenshots/BRAIN_MRI_demo.gif" width="1000" height="500"/>
+![](screenshots/BRAIN_MRI_demo.gif =250x250)
 
 ## Installations and Dependencies
 
